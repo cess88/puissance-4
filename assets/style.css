@@ -1,0 +1,118 @@
+body{
+    background-image: linear-gradient(to top, #a6cf58, #b4d25f, #c1d467, #ced770, #d9da79, #d3df82, #cde48b, #c7e995, #adf0a8, #93f5be, #78f9d7, #5ffbf1);
+    background-repeat: no-repeat;
+}
+
+h1{
+    margin: auto;
+    color: goldenrod;
+    margin-left: 42%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 40%;
+
+}
+
+td {
+    border: 8px solid olive;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    
+}
+
+
+/***redimmention image pions pour le css*/
+.pions{
+    width: 70%;
+    height: 70%;
+}
+
+#img{
+    background-image: url(../assets/image/apero.png);
+    width: auto;
+    height: 110px;
+    margin-bottom: 500px;
+    margin-top: 100px;
+ 
+    
+}
+/***************animation gagnant********/
+.bounce-in {
+    background-image: url(../assets/image/bottle.png);
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    float: right;
+    animation: bounce-in 4s ease infinite;
+  }
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% { transform: scale(.9); }
+    100% { transform: scale(1); }
+  }
+
+  .player1bounce-in {
+  background-image: url(../assets/image/player1.png);
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  float: left;
+  animation: bounce-in 4s ease infinite;
+}
+.player2bounce-in {
+    background-image: url(../assets/image/player2.png);
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    float: left;
+    animation: bounce-in 4s ease infinite;
+  }
+/**************bouton restart*********/
+  #reset{
+    border: 4px solid olive;
+    background-image: radial-gradient(circle, olive, rgb(166, 166, 11), #98be4b );
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 80px 50px 80px 50px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+/***************score*********/
+
+#imgp1{
+    background-image: url(../assets/image/score1.png);
+    background-repeat: no-repeat;
+    border: 4px solid olive;
+    border-radius: 20px;
+    padding: 50px;
+    margin-left: 200px;
+    float: left;
+}
+
+#imgp2{
+    background-image: url(../assets/image/score2.png);
+    background-repeat: no-repeat;
+    border: 4px solid olive;
+    border-radius: 20px;
+    padding: 50px;
+   
+    float: right;
+}
